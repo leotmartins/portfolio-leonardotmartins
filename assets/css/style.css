@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Assistant&family=Black+Han+Sans&family=Cairo&family=Mukta&display=swap');
+
+:root {
+    --bg-color: #2d2d29;
+    --first-color: #3ca2a2;
+    --second-color: #215a6d;
+    --third-color: #92c7a3;
+    --text-color: #dfece6;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Assistant', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    padding: 0px 10px;
+}
+
+.logo {
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: var(--first-color);
+}
+
+.logo a {
+    display:block;
+    text-decoration: none;
+    font-weight: 700;
+    color: inherit;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display:block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    background-color: var(--second-color);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 80px);
+}
+
+.title {
+    margin-top: 150px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.title h1 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.subtitle h2 {
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px 0px;
+    color: #dfece692;
+}
+
+.social {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.social a {
+    font-size: 20px;
+    background-color: var(--second-color);
+    padding: 15px 30px;
+    margin-right: 20px;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #dfece6;
+
+}
+
+.social a:hover {
+    background-color: var(--first-color);
+}
+
+.image img {
+    margin-top: 100px;
+    height: 50%;
+    align-items: center;
+    border-radius: 50%;
+}
